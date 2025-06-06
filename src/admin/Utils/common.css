@@ -1,0 +1,62 @@
+.sidebar {
+  width: 220px;
+  height: 100vh;
+  background-color: #1e1e2f;
+  color: white;
+  padding-top: 30px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  overflow-y: auto;
+  transition: width 0.3s ease;
+
+  @media (max-width: 768px) {
+    width: 60px;
+  }
+
+  ul {
+    list-style: none;
+    padding: 0;
+
+    li {
+      margin-bottom: 10px;
+      cursor: pointer;
+      padding: 14px 20px;
+      transition: background-color 0.3s ease;
+
+      &:hover {
+        background-color: #f72c2c;
+      }
+
+      a {
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        color: white;
+
+        span {
+          margin-left: 12px;
+          transition: opacity 0.3s;
+
+          @media (max-width: 768px) {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+}
+
+.dashboard-admin {
+  display: flex;
+  min-height: 100vh;
+  margin-left: 220px;
+  padding: 20px;
+  background-color: #f9f9f9;
+  transition: margin-left 0.3s ease;
+
+  @media (max-width: 768px) {
+    margin-left: 60px;
+    padding: 16px;
+  }
+}

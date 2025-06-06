@@ -1,0 +1,56 @@
+.home {
+  background-image: url('Harsh.png');
+  background-size: cover; 
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #e74c3c; 
+  color: white;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  padding: 0 5%;
+  text-align: left;
+
+  .home-content {
+    max-width: 600px;
+
+    h1 {
+      font-size: 48px;
+      font-weight: bold;
+      margin-bottom: 20px;
+
+      @media (max-width: 768px) {
+        font-size: 32px;
+      }
+    }
+
+    p {
+      font-size: 20px;
+      margin-bottom: 30px;
+      color: #f8f8f8;
+
+      @media (max-width: 768px) {
+        font-size: 16px;
+      }
+    }
+
+    button {
+      padding: 25px 100px;
+      font-size: 45px;
+      font-weight: bold;
+      background-color: #c0392b;
+      padding-bottom: 20px;
+      margin-top: 220px;
+      margin-left:20px ;
+      border: none;
+      border-radius: 8px;
+      color: white;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+
+      &:hover {
+        background-color: #a93226;
+      }
+    }
+  }
+}

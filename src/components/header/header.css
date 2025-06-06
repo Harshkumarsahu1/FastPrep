@@ -1,0 +1,43 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 5%;
+  background-color: rgba(255, 255, 255, 0.95); 
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+
+  .logo {
+    font-size: 28px;
+    font-weight: 700;
+    color: #f72c2c; 
+    letter-spacing: 1px;
+
+    @media (max-width: 768px) {
+      font-size: 20px;
+    }
+  }
+
+  .link {
+    display: flex;
+    gap: 2rem;
+
+    @media (max-width: 768px) {
+      gap: 1rem;
+    }
+
+    a {
+      font-size: 16px;
+      text-decoration: none;
+      color: #333;
+      font-weight: 500;
+      transition: color 0.3s;
+
+      &:hover {
+        color: #f72c2c; 
+      }
+    }
+  }
+}

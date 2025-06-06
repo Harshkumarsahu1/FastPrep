@@ -1,0 +1,24 @@
+.resources {
+  padding: 80px 20px;
+  text-align: center;
+  min-height: 60vh;
+  background-color: #fff5f5;
+
+  h2 {
+    font-size: 36px;
+    color: #f72c2c;
+    margin-bottom: 40px;
+    font-weight: 700;
+
+    @media (max-width: 768px) {
+      font-size: 28px;
+    }
+  }
+
+  .resource-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+  }
+}
